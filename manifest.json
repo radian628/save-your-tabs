@@ -1,0 +1,19 @@
+{
+    "name": "Save Your Tabs",
+    "version": "1.0",
+    "description": "For those who open too many tabs and get scared to close them because they want to look at them later.",
+    "permissions": ["storage", "contextMenus", "tabs", "http://*/*", "https://*/*"],
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["http://*/*", "https://*/*"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}

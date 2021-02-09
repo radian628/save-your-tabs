@@ -11,6 +11,7 @@ function generateTabList() {
     chrome.storage.local.get(["savedTabs"], function (data) {
         data.savedTabs.forEach(function (tabs, i) {
             let tabContainer = document.createElement("div");
+            tabContainer.className = "tab-container";
 
             let openTabs = document.createElement("a");
             openTabs.innerText = tabs.tabName;

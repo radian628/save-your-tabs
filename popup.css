@@ -1,0 +1,18 @@
+body {
+    text-align: right;
+}
+
+#save-button {
+    width: 100%;
+}
+
+.tab-container a {
+    float: left;
+    font-size: 1.3em;
+}
+
+.tab-container button {
+    float: right;
+    background: none;
+    border: 1px solid #888888;
+}
